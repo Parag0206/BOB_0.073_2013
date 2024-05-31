@@ -1,0 +1,224 @@
+BOB_0.073_2013
+2013 4 1 0 0 0
+
+# MOM6 ocean diagnostics files
+# 1 Hourly instantenous
+"ocean_daily",            3, "hours", 1, "hours", "time"
+"ocean_z",             3, "hours", 1, "hours", "time"
+"ocean_static",          -1, "days", 1, "days", "time" # A protected name. Do not change this line.
+#"ocean_hourly",           1, "hour", 1, "hour", "time"
+#"ocean_hourly_z",           1, "hour", 1, "hour", "time"
+
+# Static Ocean Fields
+"ocean_model", "Coriolis",    "Coriolis",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolon",      "geolon",      "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolat",      "geolat",      "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolon_c",    "geolon_c",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolat_c",    "geolat_c",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolon_u",    "geolon_u",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolat_u",    "geolat_u",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolon_v",    "geolon_v",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "geolat_v",    "geolat_v",    "ocean_static", "all", "none", "none", 2
+"ocean_model", "dxCu",        "dxCu",        "ocean_static", "all", "none", "none", 2
+"ocean_model", "dyCu",        "dyCu",        "ocean_static", "all", "none", "none", 2
+"ocean_model", "dxCv",        "dxCv",        "ocean_static", "all", "none", "none", 2
+"ocean_model", "dyCv",        "dyCv",        "ocean_static", "all", "none", "none", 2
+"ocean_model", "deptho",      "deptho",      "ocean_static", "all", "none", "none", 2
+"ocean_model", "sftof",       "sftof",       "ocean_static", "all", "none", "none", 2
+"ocean_model", "wet",         "wet",         "ocean_static", "all", "none", "none", 2
+"ocean_model", "wet_c",       "wet_c",       "ocean_static", "all", "none", "none", 2
+"ocean_model", "wet_u",       "wet_u",       "ocean_static", "all", "none", "none", 2
+"ocean_model", "wet_v",       "wet_v",       "ocean_static", "all", "none", "none", 2
+"ocean_model", "dxt",         "dxt",         "ocean_static", "all", "none", "none", 2
+"ocean_model", "dyt",         "dyt",         "ocean_static", "all", "none", "none", 2
+"ocean_model", "areacello",   "areacello",   "ocean_static", "all", "none", "none", 2
+"ocean_model", "areacello_cu","areacello_cu","ocean_static", "all", "none", "none", 2
+"ocean_model", "areacello_cv","areacello_cv","ocean_static", "all", "none", "none", 2
+"ocean_model", "areacello_bu","areacello_bu","ocean_static", "all", "none", "none", 2
+
+# Daily Diagnostic Fields 
+# SFC
+#"ocean_model", "MEKE",          "meke",        "ocean_daily", "all", "mean", "none",2
+"ocean_model", "SST",           "sst",         "ocean_daily", "all", "none", "none",2
+"ocean_model", "SSS",           "sss",         "ocean_daily", "all", "none", "none",2
+#"ocean_model", "ePBL_h_ML",     "omldamax",         "ocean_daily", "all", "max",  "none",2
+"ocean_model", "SSU",           "ssu",              "ocean_daily", "all", "none", "none",2
+"ocean_model", "SSV",           "ssv",              "ocean_daily", "all", "none", "none",2
+"ocean_model", "SSH",           "ssh",              "ocean_daily", "all", "none", "none",2
+
+# Z 
+"ocean_model_z", "u",            "u",            "ocean_z", "all", "none", "none", 2
+"ocean_model_z", "v",            "v",            "ocean_z", "all", "none", "none", 2
+"ocean_model_z", "temp",         "temp",         "ocean_z", "all", "none", "none", 2
+"ocean_model_z", "salt",         "salt",         "ocean_z", "all", "none", "none", 2
+#"ocean_model_z", "MEKE",         "meke",         "ocean_z", "all", "mean", "none", 2
+
+# Hourly Diagnostic Fields for Hurricane Hortense
+#"ocean_model", "MEKE",          "meke",        "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "SST",           "sst",         "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "SSS",           "sss",         "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "ePBL_h_ML",     "omldamax",         "ocean_hourly", "all", "max",  "none",2
+#"ocean_model", "SSU",           "ssu",              "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "SSV",           "ssv",              "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "SSH",           "ssh",              "ocean_hourly", "all", "mean", "none",2
+#"ocean_model", "ustar",         "ustar",            "ocean_hourly", "all", "mean", "none",2
+
+# This was far too big of a file
+# Hourly Z Diagnostic Fields for Hurricane Hortense
+#"ocean_model_z", "u",            "u",            "ocean_hourly_z", "all", "mean", "none", 2
+#"ocean_model_z", "v",            "v",            "ocean_hourly_z", "all", "mean", "none", 2
+#"ocean_model_z", "temp",         "temp",         "ocean_hourly_z", "all", "mean", "none", 2
+#"ocean_model_z", "salt",         "salt",         "ocean_hourly_z", "all", "mean", "none", 2
+#"ocean_model_z", "MEKE",         "meke",         "ocean_hourly_z", "all", "mean", "none", 2
+
+
+"ocean_cobalt_sfc",             1, "days", 1, "days", "time",
+"ocean_cobalt_tracers_month_z", 1, "months", 1, "days", "time",
+#===================
+# Generic COBALT surface fields:
+#==================
+ "generic_cobalt","dic_csurf",         "dic_csurf",        "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dic_deltap",        "dic_deltap",       "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dic_kw",            "dic_kw",           "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dic_sc_no",         "dic_sc_no",        "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","pco2surf",          "pco2surf",         "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_alpha",          "o2_alpha",         "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_csurf",          "o2_csurf",         "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_deltap",         "o2_deltap",        "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_kw",             "o2_kw",            "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_sc_no",          "o2_sc_no",         "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dic_stf_gas",       "dic_stf_gas",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","o2_stf_gas",        "o2_stf_gas",       "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_dry_fed",       "dep_dry_fed",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_dry_nh4",       "dep_dry_nh4",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_dry_no3",       "dep_dry_no3",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_dry_po4",       "dep_dry_po4",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_dry_lith",      "dep_dry_lith",     "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_wet_fed",       "dep_wet_fed",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_wet_nh4",       "dep_wet_nh4",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_wet_no3",       "dep_wet_no3",      "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","dep_wet_lith",      "dep_wet_lith",     "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_alk",   "runoff_flux_alk",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_dic",   "runoff_flux_dic",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_fed",   "runoff_flux_fed",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_lith",  "runoff_flux_lith", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_no3",   "runoff_flux_no3",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_ldon",  "runoff_flux_ldon", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_sldon", "runoff_flux_sldon","ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_srdon", "runoff_flux_srdon","ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_ndet",  "runoff_flux_ndet", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_pdet",  "runoff_flux_pdet", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_po4",   "runoff_flux_po4",  "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_ldop",  "runoff_flux_ldop", "ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_sldop", "runoff_flux_sldop","ocean_cobalt_sfc","all","mean","none",2
+ #"generic_cobalt","runoff_flux_srdop", "runoff_flux_srdop","ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_def_fe_di",     "sfc_def_fe_di",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_def_fe_lgp",    "sfc_def_fe_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_def_fe_mdp",    "sfc_def_fe_mdp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_def_fe_smp",    "sfc_def_fe_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_felim_di",      "sfc_felim_di",     "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_felim_lgp",     "sfc_felim_lgp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_felim_mdp",     "sfc_felim_mdp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_felim_smp",     "sfc_felim_smp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_irrlim_di",     "sfc_irrlim_di",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_irrlim_lgp",    "sfc_irrlim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_irrlim_mdp",    "sfc_irrlim_mdp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_irrlim_smp",    "sfc_irrlim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_theta_di",      "sfc_theta_di",     "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_theta_lgp",     "sfc_theta_lgp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_theta_mdp",     "sfc_theta_mdp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_theta_smp",     "sfc_theta_smp",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_mu_di",         "sfc_mu_di",        "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_mu_lgp",        "sfc_mu_lgp",       "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_mu_mdp",        "sfc_mu_mdp",       "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_mu_smp",        "sfc_mu_smp",       "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_nh4lim_lgp",    "sfc_nh4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_nh4lim_mdp",    "sfc_nh4lim_mdp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_nh4lim_smp",    "sfc_nh4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_no3lim_lgp",    "sfc_no3lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_no3lim_mdp",    "sfc_no3lim_mdp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_no3lim_smp",    "sfc_no3lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_po4lim_di",     "sfc_po4lim_di",    "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_po4lim_lgp",    "sfc_po4lim_lgp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_po4lim_mdp",    "sfc_po4lim_mdp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_po4lim_smp",    "sfc_po4lim_smp",   "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_q_fe_2_n_di",   "sfc_q_fe_2_n_di",  "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_q_fe_2_n_lgp",  "sfc_q_fe_2_n_lgp", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_q_fe_2_n_mdp",  "sfc_q_fe_2_n_mdp", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_q_fe_2_n_smp",  "sfc_q_fe_2_n_smp", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","nh4_stf",           "nh4_stf",          "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","mld03",             "mld03",            "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt_z","irr_mem_sfc",        "irr_mem_sfc",  "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt","sfc_no3",  "sfc_no3", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_po4",  "sfc_po4", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_sio4",  "sfc_sio4", "ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_co3_sol_arag", "sfc_co3_sol_arag","ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_co3_sol_calc", "sfc_co3_sol_calc","ocean_cobalt_sfc","all","mean","none",2
+ "generic_cobalt","sfc_co3_ion",      "sfc_co3_ion",     "ocean_cobalt_sfc","all","mean","none",2
+
+# ocean_cobalt_tracers_month_z
+#=======================================
+"generic_cobalt_z","htotal",             "htotal",             "ocean_cobalt_tracers_month_z","all","mean","none",2
+"ocean_model_z","volcello",        "volcello",                 "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","no3",                "no3",               "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","o2",                 "o2",               "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","o2",                 "o2min",               "ocean_cobalt_tracers_month_z","all","min","none",2
+ "generic_cobalt_z","o2",                 "o2max",               "ocean_cobalt_tracers_month_z","all","max","none",2
+"generic_cobalt_z","omega_arag",         "omega_arag",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","omega_calc",         "omega_calc",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","ndi",                "ndi",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nlg",                "nlg",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nmd",                "nmd",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nsm",                "nsm",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","pdi",                "pdi",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","plg",                "plg",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","pmd",                "pmd",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","psm",                "psm",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","q_p_2_n_Sm",         "q_p_2_n_Sm",   "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","q_p_2_n_Md",         "q_p_2_n_Md",   "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","q_p_2_n_Lg",         "q_p_2_n_Lg",   "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","q_p_2_n_Di",         "q_p_2_n_Di",   "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","silg",               "silg",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","simd",               "simd",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","chl",                "chl",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","chl_Lg",             "chl_Lg",       "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","chl_Md",             "chl_Md",       "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","chl_Sm",             "chl_Sm",       "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","chl_Di",             "chl_Di",       "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","mu_Lg",              "mu_Lg",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","mu_Md",              "mu_Md",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","mu_Sm",              "mu_Sm",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","mu_Di",              "mu_Di",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irrlim_Lg",          "irrlim_Lg",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irrlim_Md",          "irrlim_Md",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irrlim_Sm",          "irrlim_Sm",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irrlim_Di",          "irrlim_Di",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nbact",              "nbact",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nsmz",               "nsmz",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nmdz",               "nmdz",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nlgz",               "nlgz",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","po4",                "po4",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","nh4",                "nh4",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","fed",                "fed",          "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","fedet",              "fedet",        "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","ndet",               "ndet",         "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","feprime",            "feprime",      "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","theta_Lg",           "theta_Lg",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","theta_Md",           "theta_Md",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","theta_Sm",           "theta_Sm",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","theta_Di",           "theta_Di",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irr_mix",            "irr_mix",      "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irr_acclim",         "irr_acclim",   "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irr_inst",           "irr_inst",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","irr_mem",            "irr_mem",      "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","vmove_Di",           "vmove_Di",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","vmove_Sm",           "vmove_Sm",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","vmove_Md",           "vmove_Md",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+ "generic_cobalt_z","vmove_Lg",           "vmove_Lg",     "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","dissic",          "dissic",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","dissoc",          "dissoc",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","talk",          "talk",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","si",          "si",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+"generic_cobalt_z","co3",          "co3",    "ocean_cobalt_tracers_month_z","all","mean","none",2
+#=============================================================================================================================
+
